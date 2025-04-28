@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Portfolio</title>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Our Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero/Header Section -->
+  <header id="home">
+    <h1>Welcome to Our Group Portfolio</h1>
+    <p>We’re a creative and passionate team ready to make a difference!</p>
+  </header>
+
+
+<!-- About Section -->
+<section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p> 
+      We are a passionate and driven group of individuals currently pursuing a Bachelor of Science in Information Technology. As second-year (Sophomore) students, we are steadily building a strong foundation in the dynamic world of technology, honing our skills in programming, web development, database management, and other emerging fields.  
+      
+      United by our shared ambition and creativity, we continuously challenge ourselves to innovate, collaborate, and grow—not just as students, but as future IT professionals ready to make a meaningful impact in the tech industry.
+    </p>
+  
+    <div class="about-containers" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+      <div class="about-box" style="flex: 1; min-width: 250px; background-color: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center;">
+        <div style="font-size: 40px;">🏫</div>
+        <h3>About Our School</h3>
+        <p>Laguna State Polytechnic University - Sta. Cruz Campus. A place where we learn, grow, and shape our future.</p>
+      </div>
+  
+      <div class="about-box" style="flex: 1; min-width: 250px; background-color: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center;">
+        <div style="font-size: 40px;">💻</div>
+        <h3>About Our Course (Program)</h3>
+        <p>Bachelor of Science in Information Technology (BSIT) - Empowering us with skills in coding, systems, and innovation.</p>
+      </div>
+  
+      <div class="about-box" style="flex: 1; min-width: 250px; background-color: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center;">
+        <div style="font-size: 40px;">🏢</div>
+        <h3>About Our Department</h3>
+        <p>College of Computer Studies - A thriving hub for future-ready IT professionals and creative tech minds.</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section id="team">
+    <h2 class="section-title">Meet the Team</h2>
+    <div class="team-grid">
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/andrei1.jpg" alt="Andrei Villanueva" class="default-img" />
+          <img src="/img/andrei2.jpg" alt="Andrei Villanueva" class="hover-img" />
+        </div>
+        <h3>Andrei Villanueva</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>Hello! I'm Mel Andrei Villanueva, currently pursuing a BS in Information Technology at Laguna State Polytechnic University. I'm enthusiastic about exploring the world of tech and eager to develop my skills in this ever-evolving field.</p>
+          <a href="andrei.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+      
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/sk1.JPG" alt="SBD" class="default-img" />
+          <img src="/img/sk 2.jpg" alt="SBD" class="hover-img" />
+        </div>
+        <h3>Briddon Dumlao</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>Hi, I'm Sk Briddon Dumlao, an aspiring Bachelor of Science in Information Technology student at Laguna State Polytechnic University. I'm passionate about tech and excited to keep learning and growing in the field.</p>
+          <a href="briddon.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+      
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/dean1.jpg" alt="DJP" class="default-img" />
+          <img src="/img/dean2.jpg " alt="DJP" class="hover-img" />
+        </div>
+        <h3>DJ Palma</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>My name is Dean Joseph Palma, and I am pursuing a Bachelor of Science in Information Technology at Laguna State Polytechnic University. I am dedicated to developing my knowledge and skills in the ever-evolving field of technology.</p>
+          <a href="dean.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+      
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/mel1.jpg" alt="Mel" class="default-img" />
+          <img src="/img/mel2.jpg" alt="Mel" class="hover-img" />
+        </div>
+        <h3>Rommel Gidoc</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>My name is Rommel Gidoc Jr., and I am pursuing a Bachelor of Science in Information Technology at Laguna State Polytechnic University. I am dedicated to developing my knowledge and skills in the ever-evolving field of technology.</p>
+          <p><strong>Email:</strong> rjgidoc0123@gmail.com</p>
+          <a href="rommel.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+      
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/japet1.jpg" alt="JT" class="default-img" />
+          <img src="/img/japet2.jpg" alt="JT" class="hover-img" />
+        </div>
+        <h3>Japet Tomaquin</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>Hi! I’m Japet Tomaquin, a student of BS Information Technology at Laguna State Polytechnic University. Technology has always fascinated me, and I'm excited to keep learning, creating, and growing along the way.</p>
+          <p><strong>Email:</strong> japettomaquin19@gmail.com</p>
+          <a href="japet.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+      
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/benedict1.jpg" alt="Ben1" class="default-img" />
+          <img src="/img/benedict2.jpg" alt="Ben2" class="hover-img" />
+        </div>
+        <h3>Benedict Gellido</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          <p>Hi! I’m Benedict James Gellido, a student of BS Information Technology at Laguna State Polytechnic University. Technology has always fascinated me, and I'm excited to keep learning, creating, and growing along the way.</p>
+          <p><strong>Email:</strong> kidjay@gmail.com</p>
+          <a href="benedict.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+
+      <div class="team-member" onclick="toggleDetails(this)">
+        <div class="image-wrapper">
+          <img src="/img/s1.jpg" alt="SC" class="default-img" />
+          <img src="/img/s2.jpg" alt="SC" class="hover-img" />
+        </div>
+        <h3>Sarah Cayetano</h3>
+        <p>BSIT 2C</p>
+
+        <div class="hover-message">Click to interact</div>
+      
+        <div class="member-details">
+          I'm Sarah Mae Cayetano, currently studying Information Technology at Laguna State Polytechnic University. With a strong interest in innovation and problem-solving, I'm committed to building a future in the tech world.</p>
+          <p><strong>Email:</strong> sarahcayetano5@gmail.com</p>
+          <a href="sarah.html" class="view-portfolio-btn">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>Email: Juicy2C@gmail.com</p>
+  </section>
+</body>
+
+<script>
+    function toggleDetails(memberCard) {
+      memberCard.classList.toggle('open');
+    }
+  </script>
+  
+</html>

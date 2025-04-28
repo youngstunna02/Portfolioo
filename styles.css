@@ -1,0 +1,307 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080   ;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffdd57;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9f4fb;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  /* Info Sections */
+  .info-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .info-section h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #004080;
+  }
+  
+  /* Team Grid */
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px 60px;
+  }
+  
+  /* Team Member Card */
+  .team-member {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: 300px;
+    background-color: #004080;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0077cc;
+  }
+  
+  .team-member h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 900px) {
+    .team-member {
+      flex: 1 1 calc(50% - 40px); /* 2 per row */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .team-member {
+      flex: 1 1 100%; /* 1 per row */
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Image wrapper with hover swap */
+.image-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+    border: 3px solid #0077cc;
+  }
+  
+  /* Show hover image on hover */
+  .image-wrapper .hover-img {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .team-member:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .team-member:hover .default-img {
+    opacity: 0;
+  }
+  
+  /* Member details dropdown */
+  .member-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    text-align: left;
+    margin-top: 15px;
+  }
+  
+/* Scrollable member details */
+.team-member.open .member-details {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px; /* spacing for scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #0077cc #e0e0e0;
+  }
+  
+  
+  /* Hover overlay message */
+.hover-message {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 119, 204, 0.85);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  /* Show message when hovering */
+  .team-member:hover .hover-message {
+    opacity: 1;
+  }
+  
+  /* Ensure relative position for overlay */
+  .team-member {
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Hide hover message when card is open */
+.team-member.open .hover-message {
+    display: none;
+  }
+  
+  .member-details::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .member-details::-webkit-scrollbar-thumb {
+    background-color: #0077cc;
+    border-radius: 10px;
+  }
+  
+  .member-details::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+  
+  .about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .about-box {
+    flex: 1 1 250px;
+    background-color: #004080;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .about-box:hover {
+    transform: translateY(-5px);
+    background-color: #004080;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  
+  
+  .about-box h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #004080;
+  }
+  
+  .about-box p {
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  .about-box div:first-child {
+    font-size: 48px;
+  }
+  
+  .view-portfolio-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #0077cc;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-portfolio-btn:hover {
+    background-color: #005fa3;
+  }
+  
